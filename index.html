@@ -9,14 +9,14 @@
             padding: 0;
         }
         header {
-            background-image: url('img/about/banner.jpg.jpg');
+            background-image: url('https://marketplace.canva.com/EAEvZ3NDFto/1/0/1600w/canva-blush-wave-linkedin-banner-nuNmg4S1vq8.jpg');
             background-size: cover;
             color: white;
             text-align: center;
             padding: 100px 0;
         }
         nav {
-            background-color: #333;
+            background-color: wheat;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -35,6 +35,37 @@
             text-decoration: none;
             display: inline-block;
         }
+    
+    #features {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .feature {
+        flex: 1 1 300px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .feature img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature h2 {
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+
+    .feature p {
+        margin-top: 10px;
+        font-size: 1.2em;
+        color: #555;
+    }
     </style>
 </head>
 <body>
@@ -50,6 +81,47 @@
     <div style="text-align: center; margin-top: 20px;">
         <a href="deployed_project_link" class="button">View Project</a>
     </div>
-    <!-- Other sections of your website -->
+    <section id="features">
+        <div class="feature">
+            <img src="https://www.kreyonsystems.com/Blog/wp-content/uploads/2016/09/ecommerce_-website_for_your_business.jpg" alt="Feature 1">
+            <h2>Online shopping</h2>
+            <p>Start shopping from home</p>
+        </div>
+        <div class="feature">
+            <img src="https://www.mlmyug.com/assets/img/eco-features.gif" alt="Feature 2">
+            <h2>Categories</h2>
+            <p>A diffrent Categories to look for</label></p>
+        </div>
+        <div class="feature">
+            <img src="https://cdn.dribbble.com/users/412187/screenshots/1600960/shoper.gif" alt="Feature 3">
+            <h2>Promotions</h2>
+            <p>A good Promotions and discounts</p>
+        </div>
+    </section>
+    <section id="about" style="background-color: #f9f9f9; padding: 50px 0;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="text-align: center; color: #333;">About Our Online Store</h2>
+            <p style="text-align: center; color: #555; font-size: 1.2em;">Our online store was inspired by the love for unique and quality products. We wanted to create a platform where people can easily find and purchase items that bring joy and style to their lives.</p>
+            <p style="text-align: center; color: #555; font-size: 1.2em;">This project is a Portfolio Project for Holberton School. You can learn more about Holberton School and its programs <a href="https://www.holbertonschool.com/" style="color: #007bff; text-decoration: none;">here</a>.</p>
+            <h3 style="text-align: center; color: #333; margin-top: 30px;">Meet the Team</h3>
+            <ul style="list-style: none; text-align: center; padding: 0;">
+                <li style="display: inline-block; margin: 0 10px;"><a href="link_to_linkedin_profile" style="color: #007bff; text-decoration: none;">LinkedIn</a></li>
+                <li style="display: inline-block; margin: 0 10px;"><a href="https://github.com/TheYaksha00" style="color: #007bff; text-decoration: none;">GitHub</a></li>
+                <li style="display: inline-block; margin: 0 10px;"><a href="link_to_twitter_profile" style="color: #007bff; text-decoration: none;">Twitter</a></li>
+            </ul>
+            <p style="text-align: center; color: #555; font-size: 1.2em;">Check out the project's GitHub repository <a href="https://github.com/TheYaksha00/Landing-Page.git" style="color: #007bff; text-decoration: none;">here</a>.</p>
+        </div>
+    </section>
+    <section id="video">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="text-align: center; color: #333;">Our Project Story</h2>
+            <video controls style="display: block; margin: 20px auto; max-width: 100%;">
+                <source src="your_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p style="text-align: center; color: #555; font-size: 1.2em;">Meet our team, learn about our inspiration, see our features in action, and find out what's next for our project!</p>
+        </div>
+    </section>
+    
 </body>
 </html>
